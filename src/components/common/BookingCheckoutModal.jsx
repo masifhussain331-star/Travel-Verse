@@ -38,7 +38,7 @@ export default function BookingCheckoutModal({
   const [confirmedBooking, setConfirmedBooking] = useState(null);
 
   // Form State
-  const [firstName, setFirstName] = useState(user?.full_name ? user.full_name.split(' ')[0] : 'Zainab');
+  const [firstName, setFirstName] = useState(user?.full_name ? user.full_name.split(' ')[0] : '');
   const [lastName, setLastName] = useState(user?.full_name ? user.full_name.split(' ').slice(1).join(' ') : 'Fatima');
   const [email, setEmail] = useState(user?.email || 'traveler@travelverse.com');
   const [phone, setPhone] = useState(user?.phone || '+92 300 1234567');

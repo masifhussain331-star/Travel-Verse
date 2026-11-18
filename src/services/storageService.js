@@ -14,7 +14,7 @@ const STORAGE_KEYS = {
 export const DEFAULT_DEMO_USER = {
   id: 'usr-demo-786',
   email: 'traveler@travelverse.com',
-  full_name: 'Zainab Fatima',
+  full_name: 'M Asif Hussain',
   phone: '+92 300 1234567',
   role: 'customer', // 'customer' or 'admin'
   avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80',

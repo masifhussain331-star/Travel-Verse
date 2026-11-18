@@ -4,18 +4,18 @@ import { useAuth } from '../context/AuthContext';
 import { useBookings } from '../context/BookingContext';
 import { useWishlist } from '../context/WishlistContext';
 import { useCurrency } from '../context/CurrencyContext';
-import { 
-  User, 
-  TicketCheck, 
-  Heart, 
-  Award, 
-  CreditCard, 
-  ShieldCheck, 
-  Settings, 
-  CheckCircle2, 
-  Plane, 
-  Building2, 
-  Package, 
+import {
+  User,
+  TicketCheck,
+  Heart,
+  Award,
+  CreditCard,
+  ShieldCheck,
+  Settings,
+  CheckCircle2,
+  Plane,
+  Building2,
+  Package,
   Car,
   ChevronRight,
   Sparkles
@@ -51,7 +51,7 @@ export default function UserDashboardPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-      
+
       {/* Welcome Banner */}
       <div className="bg-gradient-to-r from-slate-950 via-blue-950 to-slate-900 text-white rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex items-center gap-4">
@@ -66,7 +66,7 @@ export default function UserDashboardPage() {
                 {user?.loyaltyTier || 'Platinum Voyager'}
               </span>
               {isAdmin && (
-                <Badge variant="warning" size="sm">Admin Role Active</Badge>
+                <Badge variant="warning" size="sm">Role Active</Badge>
               )}
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold font-serif mt-1">
@@ -138,7 +138,7 @@ export default function UserDashboardPage() {
 
       {/* Main 2-Column: Recent Bookings & Profile Editor */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        
+
         {/* Left Column: Recent Bookings */}
         <div className="lg:col-span-7 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
