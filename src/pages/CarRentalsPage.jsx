@@ -3,12 +3,12 @@ import { CARS_DATA } from '../data/carsData';
 import { useCurrency } from '../context/CurrencyContext';
 import CarCard from '../components/cars/CarCard';
 import BookingCheckoutModal from '../components/common/BookingCheckoutModal';
-import { 
-  Car, 
-  MapPin, 
-  Calendar, 
-  ShieldCheck, 
-  Sparkles, 
+import {
+  Car,
+  MapPin,
+  Calendar,
+  ShieldCheck,
+  Sparkles,
   Search,
   CheckCircle2
 } from 'lucide-react';
@@ -48,7 +48,7 @@ export default function CarRentalsPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
-      
+
       {/* Header Banner */}
       <div className="bg-gradient-to-r from-slate-950 via-blue-950 to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl">
         <div className="max-w-2xl space-y-3">
@@ -57,7 +57,7 @@ export default function CarRentalsPage() {
             Drive in Elegance, Comfort & Confidence
           </h1>
           <p className="text-xs sm:text-sm text-blue-200 leading-relaxed">
-            From executive Mercedes-Benz S-Class limousines and rugged 4x4 Land Cruisers for Northern Pakistan to economical family sedans with zero excess insurance.
+            Available cars includes BMW, Mercedes, Benz & some others.
           </p>
         </div>
       </div>
@@ -69,11 +69,10 @@ export default function CarRentalsPage() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
-                selectedCategory === cat 
-                  ? 'bg-blue-600 text-white shadow-xs' 
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${selectedCategory === cat
+                  ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-              }`}
+                }`}
             >
               {cat === 'all' ? 'All Vehicle Classes' : cat}
             </button>
